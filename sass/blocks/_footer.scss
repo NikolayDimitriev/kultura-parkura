@@ -1,0 +1,93 @@
+.footer {
+  padding: 100px 0;
+
+  @include mobile {
+    padding: 60px 0;
+  }
+
+  &__container {
+    @include flex-all-sb;
+    align-items: flex-start;
+    gap: 100px;
+
+    @include tablet {
+      flex-direction: column;
+      gap: 50px;
+    }
+  }
+
+  &__logo {
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__block {
+    @include flex;
+    flex-grow: 1;
+    justify-content: space-between;
+
+    @include tablet {
+      width: 100%;
+    }
+
+    @include mobile {
+      flex-direction: column;
+      gap: 50px;
+    }
+  }
+
+  &__list {
+    @include flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__column {
+    @include flex;
+    flex-direction: column;
+    gap: 26px;
+  }
+
+  &__subtitle {
+    margin: 0;
+    color: var(--gray);
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  &__link {
+    color: var(--gray);
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    transition: color 0.3s ease-in-out;
+
+    &:focus {
+      outline: none;
+    }
+
+    @include hover {
+      color: var(--green);
+    }
+
+    &:active {
+      color: var(--green);
+    }
+  }
+}
+
+.footer__link.focus-visible {
+  outline: 1px solid var(--outline-color);
+  outline-offset: 1px;
+}
+
+.footer__logo.focus-visible {
+  outline: 1px solid var(--outline-color);
+  outline-offset: 1px;
+}
