@@ -98,4 +98,37 @@
     max-width: 560px;
     margin: 0 auto;
   }
+
+  &__link {
+    color: var(--gray);
+    font-family: Inter;
+    font-size: 31px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    align-self: flex-end;
+    padding-bottom: 2px;
+    border-bottom: 1px solid var(--green);
+
+    &:focus {
+      outline: none;
+    }
+
+    @include hover {
+      color: var(--green);
+    }
+
+    &:active {
+      color: var(--green);
+    }
+
+    @include mini-mobile {
+      font-size: 26px;
+    }
+  }
+}
+
+.blog__link.focus-visible {
+  outline: 1px solid var(--outline-color);
+  outline-offset: 3px;
 }
