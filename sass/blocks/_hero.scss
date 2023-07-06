@@ -1,0 +1,125 @@
+.hero {
+  padding-top: 120px;
+  padding-bottom: 50px;
+  min-height: 723px;
+  color: var(--white);
+
+  background-color: lightgray;
+  background-image: url("../img/hero.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @include small-tablet {
+    padding-top: 60px;
+  }
+
+  &__container {
+    @include flex-all-sb;
+
+    flex-direction: column;
+    gap: 130px;
+
+    @include small-tablet {
+      gap: 70px;
+    }
+  }
+
+  &__wrapper {
+    @include flex-all-sb;
+
+    flex-direction: column;
+    text-align: center;
+
+    max-width: calc(260px * 3 + 30px * 2);
+    min-height: 400px;
+    gap: 57px;
+  }
+
+  &__title {
+    color: var(--green);
+    font-family: "Furore", sans-serif;
+    font-size: 66px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+
+    margin: 0;
+  }
+
+  &__block {
+    @include flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__text {
+    max-width: 475px;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+  }
+
+  &__buttons {
+    margin-top: 20px;
+    @include flex-v-center;
+    gap: 30px;
+
+    @include small-tablet {
+      flex-direction: column;
+      margin-top: 0;
+    }
+  }
+
+  &__btn {
+    width: 260px;
+    padding: 13px 0;
+
+    color: var(--white);
+    border: 1px solid var(--white);
+    background-color: var(--gray);
+    transition: background-color, color, border-color 0.3s ease-in-out;
+
+    &:focus {
+      outline: none;
+    }
+
+    @include hover {
+      background-color: var(--green);
+      border-color: var(--green);
+      color: var(--black);
+    }
+
+    &:active {
+      background-color: var(--green);
+    }
+
+    @include tablet {
+      width: 200px;
+    }
+
+    @include small-tablet {
+      width: 260px;
+    }
+  }
+
+  &__support {
+    margin: 0;
+    align-self: flex-end;
+
+    @include small-tablet {
+      align-self: center;
+      text-align: center;
+    }
+  }
+}
+
+.hero__btn.focus-visible {
+  outline: 1px solid var(--outline-color);
+  outline-offset: 3px;
+}

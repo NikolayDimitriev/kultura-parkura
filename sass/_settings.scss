@@ -105,4 +105,8 @@ a {
   @include small-tablet {
     display: block;
   }
+
+  @include mobile {
+    --burger-width: 20px;
+  }
 }
