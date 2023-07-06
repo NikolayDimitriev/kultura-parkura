@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Культура паркура</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="preload"
+      href="fonts/Furore.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="js/main.js" type="module"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <a class="logo">
+          <img
+            src="./img/logo.svg"
+            alt="Логотип культура паркура"
+            class="logo__img"
+          />
+        </a>
+        <nav class="nav" title="Основная навигация" data-menu>
+          <ul class="nav__list list-reset">
+            <li class="nav__item">
+              <a href="#map" class="nav__link">Карта спотов</a>
+            </li>
+            <li class="nav__item">
+              <a href="/add_spots.html" class="nav__link">Добавить спот</a>
+            </li>
+            <li class="nav__item">
+              <a href="#blog" class="nav__link">Блог</a>
+            </li>
+          </ul>
+        </nav>
+        <button
+          class="burger"
+          aria-label="Открыть меню"
+          aria-expanded="false"
+          data-burger
+        >
+          <span class="burger__line"></span>
+        </button>
+      </div>
+    </header>
+
+    <main></main>
+    <footer></footer>
+  </body>
+</html>

@@ -1,0 +1,10 @@
+:root {
+  --green: #b6ff56;
+  --gray: #2e2e2e;
+  --black: #000;
+  --white: #fff;
+
+  --content-width: 1160px;
+  --container-offset: 15px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+}
