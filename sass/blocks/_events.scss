@@ -51,6 +51,10 @@
 
     z-index: 1000;
 
+    &:focus {
+      outline: none;
+    }
+
     @include small-tablet {
       width: 25px;
     }
@@ -67,4 +71,9 @@
       right: 0;
     }
   }
+}
+
+.events__button.focus-visible {
+  outline: 1px solid var(--outline-color);
+  outline-offset: 1px;
 }
