@@ -26,7 +26,7 @@
       height: 68px;
       background-image: url("../../img/title-bg.svg");
       background-position: center;
-      background-size: cover;
+      background-size: contain;
       background-repeat: no-repeat;
       top: -10%;
       left: -28%;
@@ -107,19 +107,20 @@
     font-weight: 600;
     line-height: normal;
     align-self: flex-end;
-    padding-bottom: 2px;
     border-bottom: 1px solid var(--green);
+    padding: 10px 13px;
+    transition: background-color 0.3s ease-in-out;
 
     &:focus {
       outline: none;
     }
 
     @include hover {
-      color: var(--green);
+      background-color: var(--green);
     }
 
     &:active {
-      color: var(--green);
+      background-color: var(--green);
     }
 
     @include mini-mobile {

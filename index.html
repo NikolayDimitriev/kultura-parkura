@@ -89,8 +89,40 @@
       </section>
       <!-- /.hero -->
 
-      <section class="map" id="map"></section>
+      <section class="map" id="map">
+        <div class="container map__container">
+          <h2 class="map__title"><span>Карта спотов</span></h2>
+        </div>
+        <div class="map__wrapper">
+          <div class="map__elem" id="mymap"></div>
+          <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
+          <form class="map__form">
+            <div class="map__block">
+              <input
+                type="text"
+                placeholder="Город"
+                class="map__input input-reset"
+              />
+              <input
+                type="text"
+                placeholder="Тип слота"
+                class="map__input input-reset"
+              />
+              <input
+                type="text"
+                placeholder="Название"
+                class="map__input input-reset"
+              />
+            </div>
+            <button class="map__btn btn-reset">
+              <img src="./img/location.svg" alt="Моя локация иконка" />
+              <span>Моя позиция</span>
+            </button>
+          </form>
+        </div>
+      </section>
       <!-- /.map -->
+
       <section class="about">
         <div class="container about__container">
           <h2 class="about__title">О проекте</h2>
@@ -111,7 +143,7 @@
       </section>
       <!-- /.about -->
 
-      <section class="blog">
+      <section class="blog" id="blog">
         <div class="slider__container">
           <h2 class="blog__title"><span>Блог</span></h2>
           <div class="slider__inner">

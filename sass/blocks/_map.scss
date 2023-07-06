@@ -1,0 +1,130 @@
+.map {
+  padding-top: 90px;
+
+  @include mobile {
+    padding-top: 60px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    position: relative;
+
+    color: var(--gray);
+    font-family: Furore;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    margin: 0;
+    margin-bottom: 80px;
+    align-self: flex-start;
+
+    @include flex-all-center;
+
+    @include mobile {
+      font-size: 30px;
+    }
+
+    & span {
+      position: relative;
+      z-index: 10;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 134%;
+      height: 142%;
+      background-image: url(../../img/title-bg-big.svg);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      top: -25%;
+      left: -17%;
+      z-index: 1;
+    }
+  }
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__elem {
+    width: 100%;
+    height: 881px;
+  }
+
+  &__form {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 30px;
+    padding: 30px 80px;
+    background-color: var(--gray);
+    max-width: 805px;
+
+    @include tablet {
+      padding: 30px;
+      bottom: 50px;
+    }
+
+    @include mobile {
+      bottom: 20px;
+    }
+  }
+
+  &__block {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+
+  &__input {
+    color: var(--gray);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding: 10px 16px;
+    max-width: 195px;
+
+    &::placeholder {
+      color: #949494;
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: var(--white);
+    font-family: Inter;
+    font-size: 12.87px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
+
+[class*="copyrights-pane"] {
+  display: none !important;
+}

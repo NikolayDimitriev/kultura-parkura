@@ -1,0 +1,76 @@
+.balloon {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    color: var(--gray);
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+  }
+
+  &__score {
+    color: var(--gray);
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  &__bottom {
+    display: flex;
+    gap: 25px;
+  }
+
+  &__image {
+    max-width: 120px;
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    color: var(--gray);
+    font-family: Inter;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__descr {
+    max-width: 160px;
+    max-height: 90px;
+    display: -webkit-box;
+    -webkit-line-clamp: 6; // количество строк
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin: 0;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__link {
+    color: var(--black);
+    font-family: Inter;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    align-self: flex-end;
+  }
+}
