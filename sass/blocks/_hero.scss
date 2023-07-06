@@ -83,7 +83,7 @@
     color: var(--white);
     border: 1px solid var(--white);
     background-color: var(--gray);
-    transition: background-color, color, border-color 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
 
     &:focus {
       outline: none;

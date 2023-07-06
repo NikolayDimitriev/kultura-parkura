@@ -704,7 +704,7 @@ a {
   color: var(--white);
   border: 1px solid var(--white);
   background-color: var(--gray);
-  transition: background-color, color, border-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 .hero__btn:focus {
   outline: none;
@@ -743,4 +743,78 @@ a {
 .hero__btn.focus-visible {
   outline: 1px solid var(--outline-color);
   outline-offset: 3px;
+}
+
+.about {
+  padding: 100px 0;
+}
+@media (max-width: 576px) {
+  .about {
+    padding: 60px 0;
+  }
+}
+.about__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 50px;
+}
+.about__title {
+  margin: 0;
+  margin-bottom: 7px;
+  text-transform: uppercase;
+  color: var(--gray);
+  font-family: Furore;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.about__block {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 930px;
+}
+.about__text {
+  margin: 0;
+  text-align: center;
+  color: var(--black);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.about__link {
+  color: var(--white);
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  padding: 19px 80px;
+  background: var(--gray);
+  text-align: center;
+  transition: background-color, color 0.3s ease-in-out;
+}
+.about__link:focus {
+  outline: none;
+}
+@media (any-hover: hover) {
+  .about__link:hover {
+    background-color: var(--green);
+    color: var(--black);
+  }
+}
+.about__link:active {
+  background-color: var(--green);
+}
+@media (max-width: 576px) {
+  .about__link {
+    font-size: 18px;
+    padding: 19px 50px;
+  }
 }/*# sourceMappingURL=style.css.map */
