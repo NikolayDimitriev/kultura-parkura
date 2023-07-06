@@ -1,0 +1,101 @@
+.blog {
+  &__title {
+    position: relative;
+
+    color: var(--gray);
+    font-family: Furore;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    margin: 0;
+    align-self: flex-start;
+
+    @include flex-all-center;
+
+    & span {
+      position: relative;
+      z-index: 10;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 220px;
+      height: 68px;
+      background-image: url("../../img/title-bg.svg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      top: -10%;
+      left: -28%;
+      z-index: 1;
+    }
+  }
+
+  &__swiper {
+    width: 100%;
+    height: 410px;
+
+    @include mobile {
+      height: 360px;
+    }
+
+    @include mini-mobile {
+      height: 250px;
+    }
+  }
+
+  &__slide {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__image {
+    align-self: center;
+  }
+
+  &__subtitle {
+    margin-top: 8px;
+    margin-bottom: 24px;
+
+    color: var(--gray);
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    max-width: 560px;
+    min-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mobile {
+      max-width: none;
+      min-width: auto;
+      margin: 8px 0;
+    }
+  }
+
+  &__text {
+    margin: 0;
+
+    color: var(--gray);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2; // количество строк
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+    max-width: 560px;
+    margin: 0 auto;
+  }
+}
