@@ -1,0 +1,70 @@
+.events {
+  padding: 100px 0;
+
+  @include mobile {
+    padding: 60px 0;
+  }
+
+  &__container {
+    @include flex-all-sb;
+    flex-direction: column;
+    max-width: 1300px;
+    padding: 0 15px;
+    margin: 0 auto;
+    gap: 70px;
+  }
+
+  &__title {
+    color: var(--gray);
+    font-family: "Furore";
+    font-size: 31px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+
+    margin: 0;
+  }
+
+  &__swiper {
+    width: 100%;
+    height: 250px;
+  }
+
+  &__wrapper {
+    max-width: 1160px;
+  }
+
+  &__slide {
+    @include flex-all-center;
+  }
+
+  &__button {
+    width: 45px;
+    height: 24px;
+    position: absolute;
+    display: block;
+    top: 50%;
+    transform: translateY(-50%);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    z-index: 1000;
+
+    @include small-tablet {
+      width: 25px;
+    }
+
+    &_prev {
+      background-image: url("../../img/arrow-left.svg");
+      background-position: 0%;
+      left: 0;
+    }
+
+    &_next {
+      background-image: url("../../img/arrow-right.svg");
+      background-position: 100%;
+      right: 0;
+    }
+  }
+}

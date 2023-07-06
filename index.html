@@ -10,7 +10,15 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"
+    ></script>
     <script defer src="js/main.js" type="module"></script>
   </head>
   <body>
@@ -78,7 +86,10 @@
           </p>
         </div>
       </section>
+      <!-- /.hero -->
+
       <section class="map" id="map"></section>
+      <!-- /.map -->
       <section class="about">
         <div class="container about__container">
           <h2 class="about__title">О проекте</h2>
@@ -97,6 +108,57 @@
           <a href="/add_spots.html" class="about__link">Добавить свой спот</a>
         </div>
       </section>
+      <!-- /.about -->
+
+      <section class="events">
+        <div class="events__container">
+          <h2 class="events__title">Главные события в мире паркура</h2>
+          <div class="swiper events__swiper">
+            <div class="swiper-wrapper events__wrapper">
+              <div class="swiper-slide events__slide">
+                <img src="./img/events-1.png" alt="Логотип события Кардо" />
+              </div>
+              <div class="swiper-slide events__slide">
+                <img
+                  src="./img/events-2.png"
+                  alt="Логотип события Неделя паркура"
+                />
+              </div>
+              <div class="swiper-slide events__slide">
+                <img
+                  src="./img/events-3.png"
+                  alt="Логотип события Паркур лига"
+                />
+              </div>
+              <div class="swiper-slide events__slide">
+                <img src="./img/events-1.png" alt="Логотип события Кардо" />
+              </div>
+              <div class="swiper-slide events__slide">
+                <img
+                  src="./img/events-2.png"
+                  alt="Логотип события Неделя паркура"
+                />
+              </div>
+              <div class="swiper-slide events__slide">
+                <img
+                  src="./img/events-3.png"
+                  alt="Логотип события Паркур лига"
+                />
+              </div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <button
+              class="events__button events__button_prev btn-reset"
+            ></button>
+            <button
+              class="events__button events__button_next btn-reset"
+            ></button>
+          </div>
+          <!-- /.swiper.events__swiper -->
+        </div>
+        <!-- /.container.events__container -->
+      </section>
+      <!-- /.events -->
     </main>
     <footer></footer>
   </body>

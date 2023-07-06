@@ -21,6 +21,10 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+
+    @include mini-mobile {
+      font-size: 40px;
+    }
   }
 
   &__block {
@@ -70,5 +74,14 @@
       font-size: 18px;
       padding: 19px 50px;
     }
+
+    @include mini-mobile {
+      padding: 19px 30px;
+    }
   }
+}
+
+.about__link.focus-visible {
+  outline: 1px solid var(--outline-color);
+  outline-offset: 3px;
 }
