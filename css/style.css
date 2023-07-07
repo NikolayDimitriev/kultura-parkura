@@ -1431,4 +1431,72 @@ a {
   font-weight: 400;
   line-height: normal;
   align-self: flex-end;
+}
+
+.select {
+  width: 195px;
+  position: relative;
+  background-color: var(--white);
+  color: var(--gray);
+}
+.select_active .select__body {
+  display: flex;
+}
+.select__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px;
+  height: 40px;
+  border: 1px solid var(--gray);
+  cursor: pointer;
+}
+.select__current {
+  color: var(--gray);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.select__current_empty {
+  color: #949494;
+}
+.select__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.select__body {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  border: 1px solid var(--gray);
+  border-top: 0;
+  background-color: var(--white);
+  flex-direction: column;
+  max-height: 160px;
+  overflow-y: auto;
+  z-index: 100;
+}
+.select__item {
+  padding: 10px 16px;
+  color: var(--gray);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  transition: background-color 0.3s ease-in-out;
+}
+.select__item_disabled {
+  color: #949494;
+}
+@media (any-hover: hover) {
+  .select__item:not(:first-child):hover {
+    cursor: pointer;
+    background-color: var(--green);
+  }
 }/*# sourceMappingURL=style.css.map */

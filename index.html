@@ -98,7 +98,49 @@
           <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
           <form class="map__form">
             <div class="map__block">
-              <input
+              <div class="select" id="city-select">
+                <div class="select__header">
+                  <span class="select__current select__current_empty"
+                    >Город</span
+                  >
+                  <div class="select__icon">
+                    <img
+                      src="./img/arrow-select.svg"
+                      alt="открывающая стрелочка"
+                    />
+                  </div>
+                </div>
+                <div class="select__body">
+                  <div class="select__item select__item_disabled">Выберите город</div>
+                  <div class="select__item">Краснодар</div>
+                  <div class="select__item">Сочи</div>
+                  <div class="select__item">Анапа</div>
+                  <div class="select__item">Москва</div>
+                  <div class="select__item">Санкт-Петербург</div>
+                  <div class="select__item">Воронеж</div>
+                  <div class="select__item">Ростов-на-Дону</div>
+                </div>
+              </div>
+              <div class="select" id="spot-select">
+                <div class="select__header">
+                  <span class="select__current select__current_empty"
+                    >Тип спота</span
+                  >
+                  <div class="select__icon">
+                    <img
+                      src="./img/arrow-select.svg"
+                      alt="открывающая стрелочка"
+                    />
+                  </div>
+                </div>
+                <div class="select__body">
+                  <div class="select__item">Уличный</div>
+                  <div class="select__item">Крытый</div>
+                  <div class="select__item">Школа паркура</div>
+                  <div class="select__item">Все</div>
+                </div>
+              </div>
+              <!-- <input
                 type="text"
                 placeholder="Город"
                 class="map__input input-reset"
@@ -107,14 +149,14 @@
                 type="text"
                 placeholder="Тип слота"
                 class="map__input input-reset"
-              />
+              /> -->
               <input
                 type="text"
                 placeholder="Название"
                 class="map__input input-reset"
               />
             </div>
-            <button class="map__btn btn-reset">
+            <button type="button" class="map__btn btn-reset">
               <img src="./img/location.svg" alt="Моя локация иконка" />
               <span>Моя позиция</span>
             </button>
