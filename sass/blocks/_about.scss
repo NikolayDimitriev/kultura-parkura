@@ -9,6 +9,10 @@
     @include flex-all-sb;
     flex-direction: column;
     gap: 50px;
+
+    @include mobile {
+      gap: 40px;
+    }
   }
 
   &__title {

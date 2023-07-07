@@ -126,6 +126,7 @@ a {
 
     @include mobile {
       padding: 0 35px;
+      gap: 20px;
     }
   }
 
@@ -160,7 +161,7 @@ a {
     }
 
     &_prev {
-      background-image: url("../../img/arrow-left.svg");
+      background-image: url("../img/arrow-left.svg");
       background-position: 0%;
       left: -55px;
 
@@ -170,7 +171,7 @@ a {
     }
 
     &_next {
-      background-image: url("../../img/arrow-right.svg");
+      background-image: url("../img/arrow-right.svg");
       background-position: 100%;
       right: -55px;
 
@@ -185,4 +186,3 @@ a {
   outline: 1px solid var(--outline-color);
   outline-offset: 1px;
 }
-
