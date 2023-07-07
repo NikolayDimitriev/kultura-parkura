@@ -159,6 +159,9 @@ let select = function (id) {
 
   selectItem.forEach((item) => {
     item.addEventListener("click", function () {
+      if (item.classList.contains("select__item_disabled")) {
+        return;
+      }
       const text = item.textContent;
       selectCurrent.textContent = text;
       selectCurrent.classList.remove("select__current_empty");
