@@ -65,7 +65,7 @@
     margin: 0;
   }
 
-  &__buttons {
+  &__links {
     margin-top: 20px;
     @include flex-v-center;
     gap: 30px;
@@ -76,7 +76,7 @@
     }
   }
 
-  &__btn {
+  &__link {
     width: 260px;
     padding: 13px 0;
 

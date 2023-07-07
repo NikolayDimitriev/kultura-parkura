@@ -762,19 +762,19 @@ a {
   line-height: normal;
   margin: 0;
 }
-.hero__buttons {
+.hero__links {
   margin-top: 20px;
   display: flex;
   align-items: center;
   gap: 30px;
 }
 @media (max-width: 768px) {
-  .hero__buttons {
+  .hero__links {
     flex-direction: column;
     margin-top: 0;
   }
 }
-.hero__btn {
+.hero__link {
   width: 260px;
   padding: 13px 0;
   color: var(--white);
@@ -782,26 +782,26 @@ a {
   background-color: var(--gray);
   transition: background-color 0.3s ease-in-out;
 }
-.hero__btn:focus {
+.hero__link:focus {
   outline: none;
 }
 @media (any-hover: hover) {
-  .hero__btn:hover {
+  .hero__link:hover {
     background-color: var(--green);
     border-color: var(--green);
     color: var(--black);
   }
 }
-.hero__btn:active {
+.hero__link:active {
   background-color: var(--green);
 }
 @media (max-width: 1024px) {
-  .hero__btn {
+  .hero__link {
     width: 200px;
   }
 }
 @media (max-width: 768px) {
-  .hero__btn {
+  .hero__link {
     width: 260px;
   }
 }
@@ -851,8 +851,7 @@ a {
 @media (max-width: 576px) {
   .map__title {
     font-size: 30px;
-    width: 100%;
-    text-align: center;
+    margin: 0 auto;
     margin-bottom: 40px;
   }
 }
@@ -863,14 +862,14 @@ a {
 .map__title:before {
   content: "";
   position: absolute;
-  width: 134%;
+  width: 120%;
   height: 142%;
   background-image: url("../img/title-bg-big.svg");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
   top: -25%;
-  left: -17%;
+  left: -10%;
   z-index: 1;
 }
 .map__wrapper {
@@ -1066,8 +1065,7 @@ a {
 }
 @media (max-width: 576px) {
   .blog__title {
-    width: 100%;
-    text-align: center;
+    margin: 0 auto;
   }
 }
 .blog__title span {
@@ -1168,7 +1166,7 @@ a {
 .blog__link:active {
   background-color: var(--green);
 }
-@media (max-width: 375px) {
+@media (max-width: 576px) {
   .blog__link {
     font-size: 16px;
     align-self: center;
