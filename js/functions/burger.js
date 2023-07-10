@@ -7,8 +7,6 @@ export const burger = (function () {
   const menuItems = document?.querySelectorAll("[data-menu-item]");
   const overlay = document?.querySelector("[data-menu-overlay]");
 
-  console.log(menuItems, overlay);
-
   burger?.addEventListener("click", (e) => {
     burger?.classList.toggle("burger--active");
     menu?.classList.toggle("menu--active");

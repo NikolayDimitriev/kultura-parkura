@@ -1466,6 +1466,9 @@ a {
   border: 1px solid var(--gray);
   cursor: pointer;
 }
+.select__header_input {
+  padding: 0;
+}
 .select__current {
   color: var(--gray);
   font-family: Inter;
@@ -1477,10 +1480,34 @@ a {
 .select__current_empty {
   color: #949494;
 }
-.select__icon {
+.select__input {
+  width: 100%;
+  padding: 10px 16px;
+  padding-right: 38px;
+  outline: none;
+}
+.select__input::-moz-placeholder {
+  color: #949494;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.select__input::placeholder {
+  color: #949494;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.select__input:focus .select__body {
   display: flex;
-  justify-content: center;
-  align-items: center;
+}
+.select__icon {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .select__body {
   display: none;

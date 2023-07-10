@@ -147,28 +147,7 @@ function init() {
 
 ymaps.ready(init);
 
-let select = function (id) {
-  const select = document.getElementById(id);
-  const selectCurrent = select.querySelector(".select__current");
-  const selectHeader = select.querySelector(".select__header");
-  const selectItem = select.querySelectorAll(".select__item");
-
-  selectHeader.addEventListener("click", function () {
-    select.classList.toggle("select_active");
-  });
-
-  selectItem.forEach((item) => {
-    item.addEventListener("click", function () {
-      if (item.classList.contains("select__item_disabled")) {
-        return;
-      }
-      const text = item.textContent;
-      selectCurrent.textContent = text;
-      selectCurrent.classList.remove("select__current_empty");
-      select.classList.remove("select_active");
-    });
-  });
-};
+import { select } from "./functions/select.js";
 
 select("spot-select");
 select("city-select");

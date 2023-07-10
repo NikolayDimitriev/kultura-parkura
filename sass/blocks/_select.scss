@@ -18,6 +18,10 @@
     height: 40px;
     border: 1px solid var(--gray);
     cursor: pointer;
+
+    &_input {
+      padding: 0;
+    }
   }
 
   &__current {
@@ -33,10 +37,32 @@
     }
   }
 
+  &__input {
+    width: 100%;
+    padding: 10px 16px;
+    padding-right: 38px;
+    outline: none;
+
+    &::placeholder {
+      color: #949494;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+
+    &:focus {
+      .select__body {
+        display: flex;
+      }
+    }
+  }
+
   &__icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
   }
 
   &__body {

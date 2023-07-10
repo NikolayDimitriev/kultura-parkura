@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Культура паркура</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -99,28 +100,32 @@
           <form class="map__form">
             <div class="map__block">
               <div class="select" id="city-select">
-                <div class="select__header">
-                  <span class="select__current select__current_empty"
-                    >Город</span
-                  >
-                  <div class="select__icon">
-                    <img
-                      src="./img/arrow-select.svg"
-                      alt="открывающая стрелочка"
-                    />
-                  </div>
+                <div class="select__header select__header_input">
+                  <input
+                    class="select__current select__input input-reset"
+                    placeholder="Город"
+                  />
+                  <img
+                    src="./img/arrow-select.svg"
+                    alt="открывающая стрелочка"
+                    class="select__icon"
+                  />
                 </div>
                 <div class="select__body">
                   <div class="select__item select__item_disabled">
                     Выберите город
                   </div>
-                  <div class="select__item">Краснодар</div>
-                  <div class="select__item">Сочи</div>
-                  <div class="select__item">Анапа</div>
-                  <div class="select__item">Москва</div>
-                  <div class="select__item">Санкт-Петербург</div>
-                  <div class="select__item">Воронеж</div>
-                  <div class="select__item">Ростов-на-Дону</div>
+                  <div class="select__item false">Краснодар</div>
+                  <div class="select__item false">Сочи</div>
+                  <div class="select__item false">Анапа</div>
+                  <div class="select__item false">Москва</div>
+                  <div class="select__item false">Санкт-Петербург</div>
+                  <div class="select__item false">Воронеж</div>
+                  <div class="select__item false">Ростов-на-Дону</div>
+                  <div class="select__item false">Липецк</div>
+                  <div class="select__item false">Самара</div>
+                  <div class="select__item false">Великий Новгород</div>
+                  <div class="select__item false">Нижний Новгород</div>
                 </div>
               </div>
               <div class="select" id="spot-select">
@@ -142,16 +147,6 @@
                   <div class="select__item">Все</div>
                 </div>
               </div>
-              <!-- <input
-                type="text"
-                placeholder="Город"
-                class="map__input input-reset"
-              />
-              <input
-                type="text"
-                placeholder="Тип слота"
-                class="map__input input-reset"
-              /> -->
               <input
                 type="text"
                 placeholder="Название"
