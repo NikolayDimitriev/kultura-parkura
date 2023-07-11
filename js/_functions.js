@@ -84,7 +84,7 @@ function init() {
                 <li class="balloon__item">Ул. Ставропольская 98</li>
                 <li class="balloon__item">+791823743845</li>
               </ul>
-              <a href="./spot.html" class="balloon__link">Подробнее</a>
+              <a href="./about-spot.html" class="balloon__link">Подробнее</a>
             </div>
           </div>
         </div>
@@ -120,7 +120,7 @@ function init() {
                 <li class="balloon__item">Ул. Ставропольская 98</li>
                 <li class="balloon__item">+791823743845</li>
               </ul>
-              <a href="./spot.html" class="balloon__link">Подробнее</a>
+              <a href="./about-spot.html" class="balloon__link">Подробнее</a>
             </div>
           </div>
         </div>
