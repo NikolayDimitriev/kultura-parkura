@@ -1,0 +1,105 @@
+.nearby {
+  padding: 25px 0 50px;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    @include small-tablet {
+      gap: 30px;
+    }
+  }
+
+  &__title {
+    position: relative;
+
+    color: var(--gray);
+    font-family: Furore;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    margin: 0;
+    align-self: flex-start;
+
+    @include flex-all-center;
+
+    @include tablet {
+      font-size: 36px;
+    }
+
+    @include mobile {
+      margin: 0 auto;
+    }
+
+    @include mini-mobile {
+      font-size: 26px;
+    }
+
+    & span {
+      position: relative;
+      z-index: 10;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 110%;
+      height: 147%;
+      background-image: url("../img/title-bg-big.svg");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      top: -23%;
+      left: -4%;
+      z-index: 1;
+
+      @include tablet {
+        display: none;
+      }
+    }
+  }
+
+  &__block {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    @include small-tablet {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__link {
+    color: var(--gray);
+    font-family: Inter;
+    font-size: 41.328px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    transition: color 0.3s ease-in-out;
+
+    &:focus {
+      outline: none;
+    }
+
+    @include hover {
+      color: var(--green);
+    }
+
+    &:active {
+      color: var(--green);
+    }
+
+    @include mobile {
+      font-size: 26px;
+    }
+  }
+}
+
+.nearby__link.focus-visible {
+  outline: 1px solid var(--outline-color);
+  outline-offset: 3px;
+}

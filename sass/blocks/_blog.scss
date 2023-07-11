@@ -44,7 +44,7 @@
 
   &__swiper {
     width: 100%;
-    height: 410px;
+    height: 420px;
 
     @include mobile {
       height: 360px;
@@ -55,10 +55,24 @@
     }
   }
 
-  &__slide {
+  &__item {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: flex-start;
+    padding: 8px;
+
+    &:focus {
+      outline: none;
+    }
+
+    @include hover {
+      background-color: var(--green);
+    }
+
+    &:active {
+      background-color: var(--green);
+    }
   }
 
   &__image {
@@ -67,7 +81,7 @@
 
   &__subtitle {
     margin-top: 8px;
-    margin-bottom: 24px;
+    margin-bottom: 18px;
 
     color: var(--gray);
     font-family: Inter;
@@ -97,6 +111,8 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+
+    height: 40px;
 
     display: -webkit-box;
     -webkit-line-clamp: 2; // количество строк
