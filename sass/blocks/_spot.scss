@@ -1,5 +1,5 @@
 .spot {
-  padding: 50px 0;
+  padding: 50px 0 25px;
 
   &__container {
     display: flex;
@@ -8,6 +8,7 @@
 
     @include small-tablet {
       flex-direction: column;
+      gap: 30px;
     }
   }
 
@@ -60,13 +61,17 @@
       position: absolute;
       width: 130%;
       height: 160%;
-      background-image: url(../img/title-bg-big.svg);
+      background-image: url("../img/title-bg-big.svg");
       background-position: center;
       background-size: contain;
       background-repeat: no-repeat;
       top: -34%;
       left: -15%;
       z-index: 1;
+
+      @include tablet {
+        display: none;
+      }
     }
   }
 

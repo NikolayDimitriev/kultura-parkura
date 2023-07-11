@@ -35,6 +35,10 @@
       top: -10%;
       left: -28%;
       z-index: 1;
+
+      @include tablet {
+        display: none;
+      }
     }
   }
 
