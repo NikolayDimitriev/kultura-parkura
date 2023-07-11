@@ -5,7 +5,6 @@ const eventsSlider = new Swiper(".events__swiper", {
   direction: "horizontal",
   loop: true,
   slidesPerView: 1,
-  spaceBetween: 40,
 
   breakpoints: {
     320: {
