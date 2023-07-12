@@ -1,0 +1,88 @@
+.article {
+  color: var(--black);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 50px 0;
+
+  @include mobile {
+    padding: 25px 0;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    @include mobile {
+      gap: 30px;
+    }
+  }
+
+  &__title {
+    color: var(--gray);
+    font-family: Furore;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    text-align: center;
+
+    @include small-tablet {
+      font-size: 36px;
+    }
+
+    @include mobile {
+      font-size: 30px;
+    }
+
+    @include mini-mobile {
+      font-size: 28px;
+    }
+  }
+
+  &__text {
+    max-width: calc(100% - 17%);
+    margin: 0 auto;
+  }
+
+  &-block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+
+    @include mobile {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    &__img {
+      width: 45%;
+
+      @include mobile {
+        width: 100%;
+      }
+    }
+  }
+
+  &__date {
+    text-align: right;
+    font-size: 18px;
+  }
+
+  &-blog {
+    &__title {
+      align-self: center;
+    }
+
+    &__button {
+      align-self: center;
+    }
+  }
+}

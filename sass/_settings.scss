@@ -118,15 +118,9 @@ a {
     max-width: 1290px;
     padding: 0 65px;
     margin: 0 auto;
-    gap: 70px;
-
-    @include small-tablet {
-      gap: 40px;
-    }
 
     @include mobile {
       padding: 0 35px;
-      gap: 20px;
     }
   }
 
