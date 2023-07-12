@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Культура паркура</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"
+    ></script>
+    <script defer src="js/main.js" type="module"></script>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="container header__container">
+        <a class="logo">
+          <img
+            src="./img/logo.svg"
+            alt="Логотип культура паркура"
+            class="logo__img"
+          />
+        </a>
+        <nav class="nav" title="Основная навигация" data-menu>
+          <ul class="nav__list list-reset">
+            <li class="nav__item" data-menu-item>
+              <a href="#map" class="nav__link">Карта спотов</a>
+            </li>
+            <li class="nav__item" data-menu-item>
+              <a href="./add-spot.html" class="nav__link">Добавить спот</a>
+            </li>
+            <li class="nav__item" data-menu-item>
+              <a href="#blog" class="nav__link">Блог</a>
+            </li>
+          </ul>
+        </nav>
+        <button
+          class="burger"
+          aria-label="Открыть меню"
+          aria-expanded="false"
+          data-burger
+        >
+          <span class="burger__line"></span>
+        </button>
+      </div>
+    </header>
+    <!-- /.header -->
+
+    <main class="main">
+      <section class="blog slider" id="blog">
+        <div class="slider__container">
+          <h2 class="blog__title"><span>Блог</span></h2>
+          <div class="slider__inner">
+            <div class="swiper slider__swiper blog__swiper">
+              <div class="swiper-wrapper slider__wrapper">
+                <a
+                  href="./article.html"
+                  class="swiper-slide slider__slide blog__item"
+                >
+                  <img
+                    src="./img/blog-1.jpg"
+                    alt="Крутые красовки для паркура"
+                    class="blog__image"
+                  />
+                  <h3 class="blog__subtitle">Скейт-парки</h3>
+                  <p class="blog__text">
+                    В&nbsp;классификации скейт парков довольно легко запутаться
+                    как опытному райдеру, так и&nbsp;широкой публике.
+                    В&nbsp;классификации скейт парков довольно легко запутаться
+                    как опытному райдеру, так и&nbsp;широкой публике.
+                  </p>
+                </a>
+                <a
+                  href="./article.html"
+                  class="swiper-slide slider__slide blog__item"
+                >
+                  <img
+                    src="./img/blog-2.jpg"
+                    alt="Парень паркурит между стенами"
+                    class="blog__image"
+                  />
+                  <h3 class="blog__subtitle">Скейт-парки</h3>
+                  <p class="blog__text">
+                    В&nbsp;классификации скейт парков довольно легко запутаться
+                    как опытному райдеру, так и&nbsp;широкой публике.
+                    В&nbsp;классификации скейт парков довольно легко запутаться
+                    как опытному райдеру, так и&nbsp;широкой публике.
+                  </p>
+                </a>
+                <a
+                  href="./article.html"
+                  class="swiper-slide slider__slide blog__item"
+                >
+                  <img
+                    src="./img/blog-1.jpg"
+                    alt="Крутые красовки для паркура"
+                    class="blog__image"
+                  />
+                  <h3 class="blog__subtitle">Скейт-парки</h3>
+                  <p class="blog__text">
+                    В&nbsp;классификации скейт парков довольно легко запутаться
+                    как опытному райдеру, так и&nbsp;широкой публике.
+                    В&nbsp;классификации скейт парков довольно легко запутаться
+                    как опытному райдеру, так и&nbsp;широкой публике.
+                  </p>
+                </a>
+                <a
+                  href="./article.html"
+                  class="swiper-slide slider__slide blog__item"
+                >
+                  <img
+                    src="./img/blog-2.jpg"
+                    alt="Парень паркурит между стенами"
+                    class="blog__image"
+                  />
+                  <h3 class="blog__subtitle">Скейт-парки</h3>
+                  <p class="blog__text">
+                    В&nbsp;классификации скейт парков довольно легко запутаться
+                    как опытному райдеру, так и&nbsp;широкой публике.
+                    В&nbsp;классификации скейт парков довольно легко запутаться
+                    как опытному райдеру, так и&nbsp;широкой публике.
+                  </p>
+                </a>
+              </div>
+            </div>
+
+            <button
+              class="slider__button slider__button_prev blog__button blog__button_prev btn-reset"
+            ></button>
+            <button
+              class="slider__button slider__button_next blog__button blog__button_next btn-reset"
+            ></button>
+          </div>
+          <a href="./blog.html" class="blog__link">Посмотреть все</a>
+        </div>
+      </section>
+      <!-- /.blog -->
+
+      <section class="events slider">
+        <div class="slider__container">
+          <h2 class="events__title">Главные события в мире паркура</h2>
+          <div class="slider__inner">
+            <div class="swiper slider__swiper events__swiper">
+              <div class="swiper-wrapper slider__wrapper">
+                <div
+                  class="swiper-slide slider__slide events__slide events__slide_one"
+                ></div>
+                <div
+                  class="swiper-slide slider__slide events__slide events__slide_two"
+                ></div>
+                <div
+                  class="swiper-slide slider__slide events__slide events__slide_three"
+                ></div>
+                <div
+                  class="swiper-slide slider__slide events__slide events__slide_one"
+                ></div>
+                <div
+                  class="swiper-slide slider__slide events__slide events__slide_two"
+                ></div>
+                <div
+                  class="swiper-slide slider__slide events__slide events__slide_three"
+                ></div>
+              </div>
+            </div>
+            <!-- /.swiper.slider__swiper.events__swiper -->
+            <button
+              class="slider__button slider__button_prev events__button events__button_prev btn-reset"
+            ></button>
+            <button
+              class="slider__button slider__button_next events__button events__button_next btn-reset"
+            ></button>
+          </div>
+          <!-- /.slider__inner -->
+        </div>
+        <!-- /.slider__container -->
+      </section>
+      <!-- /.events -->
+
+      <section class="subscribe" id="subscribe">
+        <div class="subscribe__wrapper">
+          <div class="container subscribe__container">
+            <h2 class="subscribe__title">Подпишитесь на наши новости</h2>
+            <a href="#" target="_blank" class="subscribe__link">Telegram</a>
+          </div>
+        </div>
+        <!-- /.subscribe__wrapper -->
+      </section>
+      <!-- /.subscribe -->
+    </main>
+    <!-- /.main -->
+
+    <footer class="footer">
+      <div class="container footer__container">
+        <a href="#header" class="logo footer__logo">
+          <img
+            src="./img/logo.svg"
+            alt="Логотип культура паркура"
+            class="logo__img"
+          />
+        </a>
+        <div class="footer__block">
+          <ul class="footer__list list-reset">
+            <li class="footer__item">
+              <a href="#" class="footer__link"
+                >Телеграм-медиа «Культура паркура»</a
+              >
+            </li>
+            <li class="footer__item">
+              <a href="./blog.html" class="footer__link">Блог</a>
+            </li>
+          </ul>
+          <div class="footer__column">
+            <h2 class="footer__subtitle">Контакты</h2>
+            <ul class="footer__list list-reset">
+              <li class="footer__item">
+                <a href="tel:+79189233484" class="footer__link"
+                  >+7 (918) 923-34-84</a
+                >
+              </li>
+              <li class="footer__item">
+                <a href="mailto:marketing@fly-z-one.ru" class="footer__link"
+                  >marketing@fly-z-one.ru</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- /.footer -->
+  </body>
+</html>
