@@ -38,6 +38,10 @@
     gap: 25px;
 
     padding: 40px 90px;
+
+    @include mobile {
+      padding: 30px;
+    }
   }
 
   &__title {
@@ -48,6 +52,15 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    text-align: center;
+
+    @include tablet {
+      font-size: 24px;
+    }
+
+    @include mobile {
+      font-size: 20px;
+    }
   }
 
   &__body {
@@ -105,5 +118,10 @@
     right: 16px;
     width: 24px;
     height: 24px;
+
+    @include mobile {
+      top: 8px;
+      right: 8px;
+    }
   }
 }

@@ -1744,6 +1744,11 @@ a {
   gap: 25px;
   padding: 40px 90px;
 }
+@media (max-width: 576px) {
+  .modal__content {
+    padding: 30px;
+  }
+}
 .modal__title {
   margin: 0;
   color: var(--gray);
@@ -1752,6 +1757,17 @@ a {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  .modal__title {
+    font-size: 24px;
+  }
+}
+@media (max-width: 576px) {
+  .modal__title {
+    font-size: 20px;
+  }
 }
 .modal__body {
   background: #d9d9d9;
@@ -1808,6 +1824,12 @@ a {
   right: 16px;
   width: 24px;
   height: 24px;
+}
+@media (max-width: 576px) {
+  .modal__close {
+    top: 8px;
+    right: 8px;
+  }
 }
 
 .spot {
