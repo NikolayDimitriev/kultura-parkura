@@ -20,7 +20,7 @@
       defer
       src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"
     ></script>
-    <script defer src="js/main.js" type="module"></script>
+    <script defer src="js/spot.js" type="module"></script>
   </head>
   <body>
     <header class="header" id="header">
@@ -57,6 +57,226 @@
     </header>
     <!-- /.header -->
     <main class="main">
+      <section class="add-spot">
+        <div class="container add-spot__container">
+          <h1 class="add-spot__title"><span>Добавить спот</span></h1>
+          <p class="add-spot__text">
+            Мы развиваем культуру паркура в России, а вы помогаете нам построить
+            наполнить карту существующими спотами в городах. Присоединяйтесь
+            к нам… Мы развиваем культуру паркура в России, а вы помогаете
+            нам построить наполнить карту существующими спотами в городах.
+            Присоединяйтесь к нам… Мы развиваем культуру паркура в России,
+            а вы помогаете нам построить наполнить карту существующими спотами
+            в городах. Присоединяйтесь к нам…
+          </p>
+          <form class="add-spot__form">
+            <h2 class="add-spot__subtitle">Информация о споте</h2>
+            <div class="add-spot__block">
+              <div class="add-spot__left">
+                <div class="add-spot__field">
+                  <label for="school-name" class="add-spot__label"
+                    >НАЗВАНИЕ ШКОЛЫ:</label
+                  >
+                  <input
+                    type="text"
+                    class="add-spot__input input-reset"
+                    id="school-name"
+                    name="school-name"
+                  />
+                </div>
+                <div class="add-spot__field">
+                  <label for="phone-spot" class="add-spot__label"
+                    >НОМЕР ТЕЛЕФОНА:</label
+                  >
+                  <input
+                    type="text"
+                    class="add-spot__input input-reset"
+                    id="phone-spot"
+                    name="phone-spot"
+                  />
+                </div>
+                <div class="add-spot__field">
+                  <label for="site" class="add-spot__label">ВЕБ-САЙТ:</label>
+                  <input
+                    type="text"
+                    class="add-spot__input input-reset"
+                    id="site"
+                    name="site"
+                  />
+                </div>
+                <div class="add-spot__field">
+                  <label for="address" class="add-spot__label">АДРЕС:</label>
+                  <input
+                    type="text"
+                    class="add-spot__input input-reset"
+                    id="address"
+                    name="address"
+                  />
+                </div>
+                <div class="add-spot__field">
+                  <label for="email" class="add-spot__label"
+                    >ЭЛЕКТРОННАЯ ПОЧТА:</label
+                  >
+                  <input
+                    type="email"
+                    class="add-spot__input input-reset"
+                    id="email"
+                    name="email"
+                  />
+                </div>
+                <div class="add-spot__field">
+                  <label for="descr" class="add-spot__label">ОПИСАНИЕ:</label>
+                  <textarea
+                    type="email"
+                    class="add-spot__input add-spot__textarea input-reset"
+                    id="descr"
+                    name="description"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="add-spot__right">
+                <div class="add-spot__field">
+                  <label for="work-time" class="add-spot__label"
+                    >ГРАФИК РАБОТЫ:</label
+                  >
+                  <input
+                    type="text"
+                    class="add-spot__input input-reset"
+                    id="work-time"
+                    name="work-time"
+                  />
+                </div>
+                <div class="add-spot__field">
+                  <label for="social" class="add-spot__label"
+                    >СОЦИАЛЬНЫЕ СЕТИ:</label
+                  >
+                  <input
+                    type="text"
+                    class="add-spot__input input-reset"
+                    placeholder="VK"
+                    id="social"
+                    name="social-vk"
+                  />
+                </div>
+                <div class="add-spot__field">
+                  <input
+                    type="text"
+                    class="add-spot__input input-reset"
+                    placeholder="Telegram"
+                    name="social-telegram"
+                  />
+                </div>
+                <div class="add-spot__field">
+                  <input
+                    type="text"
+                    class="add-spot__input input-reset"
+                    placeholder="YouTube"
+                    name="social-youtube"
+                  />
+                </div>
+                <div class="add-spot__field">
+                  <label for="logo-file" class="add-spot__label"
+                    >ЛОГОТИП:</label
+                  >
+                  <label for="logo-file" class="add-spot__label_file">
+                    <input
+                      type="file"
+                      id="logo-file"
+                      class="add-spot__input_file"
+                    />
+                    <img
+                      src="./img/input-file-image.png"
+                      alt="Место для добавления файла"
+                      class="add-spot__input_file-img"
+                    />
+                  </label>
+                </div>
+                <div class="add-spot__field">
+                  <label for="gallery-file" class="add-spot__label"
+                    >ГАЛЕРЕЯ:</label
+                  >
+                  <label for="gallery-file" class="add-spot__label_file">
+                    <input
+                      type="file"
+                      id="gallery-file"
+                      class="add-spot__input_file"
+                    />
+                    <img
+                      src="./img/input-file-image.png"
+                      alt="Место для добавления файла"
+                      class="add-spot__input_file-img"
+                    />
+                  </label>
+                </div>
+              </div>
+            </div>
+
+            <h2 class="add-spot__subtitle">
+              Персональная информация для связи
+            </h2>
+
+            <div class="add-spot__down">
+              <div class="add-spot__block">
+                <div class="add-spot__left">
+                  <div class="add-spot__field">
+                    <label for="author-name" class="add-spot__label"
+                      >Имя:</label
+                    >
+                    <input
+                      type="text"
+                      class="add-spot__input input-reset"
+                      id="author-name"
+                      name="author-name"
+                    />
+                  </div>
+                </div>
+                <div class="add-spot__right">
+                  <div class="add-spot__field">
+                    <label for="author-phone" class="add-spot__label"
+                      >НОМЕР ТЕЛЕФОНА:</label
+                    >
+                    <input
+                      type="text"
+                      class="add-spot__input input-reset"
+                      id="author-phone"
+                      name="author-phone"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="add-spot__field">
+                <label for="author-comment" class="add-spot__label"
+                  >КОММЕНТАРИЙ:</label
+                >
+                <textarea
+                  class="add-spot__input add-spot__textarea add-spot__textarea_second input-reset"
+                  id="author-comment"
+                  name="author-comment"
+                ></textarea>
+              </div>
+              <div class="checkbox">
+                <input
+                  class="checkbox__input"
+                  type="checkbox"
+                  id="politics-checkbox"
+                  name="checkbox"
+                />
+                <label for="politics-checkbox" class="checkbox__label">
+                  Я&nbsp;признаю и&nbsp;соглашаюсь с&nbsp;условиями, изложенными
+                  в&nbsp;
+                  <a href="./politics.html" class="checkbox__link">
+                    Политике конфиденциальности FLY ZONE</a
+                  >, которую я&nbsp;прочитал и&nbsp;понял.</label
+                >
+              </div>
+            </div>
+            <button type="button" class="add-spot__button btn-reset">
+              Добавить свой спот
+            </button>
+          </form>
+        </div>
+      </section>
+
       <section class="subscribe" id="subscribe">
         <div class="subscribe__wrapper">
           <div class="container subscribe__container">
