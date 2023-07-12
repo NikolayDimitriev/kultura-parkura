@@ -1,0 +1,109 @@
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 200;
+  opacity: 0;
+  transition: opacity 200ms ease-in;
+  pointer-events: none;
+
+  &_active {
+    opacity: 1;
+    pointer-events: auto;
+    overflow-y: auto;
+  }
+
+  &__dialog {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: var(--white);
+    border: 1px solid var(--green);
+    max-width: 540px;
+    outline: 0;
+  }
+
+  &__content {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+
+    padding: 40px 90px;
+  }
+
+  &__title {
+    margin: 0;
+    color: var(--gray);
+    font-family: Inter;
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  &__body {
+    background: #d9d9d9;
+    max-width: 340px;
+    width: 100%;
+    height: 120px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__input {
+    padding: 10px 27px;
+    max-width: 250px;
+    height: 40px;
+
+    color: var(--gray);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+
+    border: 1px solid var(--gray);
+
+    &::placeholder {
+      color: #949494;
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__button {
+    padding: 13px 40px;
+    color: var(--white);
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    background-color: var(--gray);
+  }
+
+  &__close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 24px;
+    height: 24px;
+  }
+}
