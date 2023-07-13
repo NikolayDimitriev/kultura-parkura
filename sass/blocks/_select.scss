@@ -77,6 +77,10 @@
     max-height: 160px;
     overflow-y: auto;
     z-index: 100;
+
+    &_first {
+      z-index: 200;
+    }
   }
 
   &__item {
@@ -93,7 +97,7 @@
       color: #949494;
     }
 
-    &:not(:first-child) {
+    &:not(.select__item_disabled) {
       @include hover {
         cursor: pointer;
         background-color: var(--green);

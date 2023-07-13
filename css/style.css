@@ -1625,6 +1625,9 @@ a {
   overflow-y: auto;
   z-index: 100;
 }
+.select__body_first {
+  z-index: 200;
+}
 .select__item {
   padding: 10px 16px;
   color: var(--gray);
@@ -1639,7 +1642,7 @@ a {
   color: #949494;
 }
 @media (any-hover: hover) {
-  .select__item:not(:first-child):hover {
+  .select__item:not(.select__item_disabled):hover {
     cursor: pointer;
     background-color: var(--green);
   }
