@@ -191,11 +191,12 @@
         width: 1px;
         height: 1px;
         opacity: 0;
-
-        &-img {
-          cursor: pointer;
-        }
+        background: none;
       }
+    }
+
+    &__img {
+      cursor: pointer;
     }
 
     &__textarea {

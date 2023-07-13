@@ -931,6 +931,7 @@ a {
   line-height: normal;
   padding: 10px 16px;
   max-width: 195px;
+  outline: none;
 }
 .map__input::-moz-placeholder {
   color: #949494;
@@ -2260,17 +2261,13 @@ a {
   }
 }
 .blog-page__image {
+  max-width: 100%;
   width: 100%;
 }
 .blog-page__subtitle {
-  max-width: none;
-  min-width: auto;
-  margin-left: 0;
-  margin-right: 0;
+  width: 100%;
 }
 .blog-page__text {
-  max-width: none;
-  min-width: auto;
   height: 60px;
   -webkit-line-clamp: 3;
   margin: 0;
@@ -2561,8 +2558,9 @@ a {
   width: 1px;
   height: 1px;
   opacity: 0;
+  background: none;
 }
-.add-spot__input_file-img {
+.add-spot__img {
   cursor: pointer;
 }
 .add-spot__textarea {

@@ -4,23 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Культура паркура</title>
-    <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <script
-      defer
-      src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"
-    ></script>
-    <script defer src="js/spot.js" type="module"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script defer src="./js/spot.js" type="module"></script>
   </head>
   <body>
     <header class="header" id="header">
@@ -127,7 +119,6 @@
                 <div class="add-spot__field">
                   <label for="descr" class="add-spot__label">ОПИСАНИЕ:</label>
                   <textarea
-                    type="email"
                     class="add-spot__input add-spot__textarea input-reset"
                     id="descr"
                     name="description"
@@ -178,16 +169,19 @@
                   <label for="logo-file" class="add-spot__label"
                     >ЛОГОТИП:</label
                   >
-                  <label for="logo-file" class="add-spot__label_file">
+                  <label
+                    for="logo-file"
+                    class="add-spot__label add-spot__label_file"
+                  >
                     <input
                       type="file"
                       id="logo-file"
-                      class="add-spot__input_file"
+                      class="add-spot__input add-spot__input_file"
                     />
                     <img
                       src="./img/input-file-image.png"
                       alt="Место для добавления файла"
-                      class="add-spot__input_file-img"
+                      class="add-spot__img"
                     />
                   </label>
                 </div>
@@ -195,16 +189,19 @@
                   <label for="gallery-file" class="add-spot__label"
                     >ГАЛЕРЕЯ:</label
                   >
-                  <label for="gallery-file" class="add-spot__label_file">
+                  <label
+                    for="gallery-file"
+                    class="add-spot__label add-spot__label_file"
+                  >
                     <input
                       type="file"
                       id="gallery-file"
-                      class="add-spot__input_file"
+                      class="add-spot__input add-spot__input_file"
                     />
                     <img
                       src="./img/input-file-image.png"
                       alt="Место для добавления файла"
-                      class="add-spot__input_file-img"
+                      class="add-spot__img"
                     />
                   </label>
                 </div>
@@ -335,7 +332,7 @@
         <div class="modal__content">
           <h2 class="modal__title">Введите код с картинки</h2>
           <div class="modal__body">
-            <img src="" alt="Капча" class="modal__image" />
+            <img src="#" alt="Капча" class="modal__image" />
           </div>
           <input
             type="text"
@@ -346,7 +343,7 @@
             Отправить
           </button>
         </div>
-        <button href="#close" title="Close" class="modal__close btn-reset">
+        <button title="Close" class="modal__close btn-reset">
           <img
             src="./img/close-btn.svg"
             alt="Иконка закрыть"
