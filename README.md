@@ -5,4 +5,4 @@
 
 Верстка многостраничного сайта, все адаптивы, слайдеры, использовались Grid и Flex. Vanilla JS для интерактивности. 
 
-Ссылка: (http://dimitriev.crazytest.studio/kultura-parkura/)http://dimitriev.crazytest.studio/kultura-parkura/
+Ссылка: [*тут*](http://dimitriev.crazytest.studio/kultura-parkura/)
